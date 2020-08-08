@@ -11,6 +11,8 @@ body {
 header {
     background: #e9c88a;
 }
+
+
 header ::after{
     content: '';
     display: table;
@@ -141,6 +143,10 @@ section .wave::after{
     margin: 0 30px;
     transform: rotate(-30deg) skew(25deg);
     background: rgb(64, 88, 102);
+}
+.layered ul li:hover span{
+    box-shadow: -1px 1px 1px rgb(128, 128, 128);
+    opacity: .5;
 }
 .layered ul li span {
     position: absolute;
