@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -17,11 +17,20 @@
         <ul>
             <li><a href=#> Home </a></li>
             <li><a href=#> Projects </a></li>
-            <li><a href=#> Resume </a></li>
+            <li><a href="pages/resume.html"> Resume </a></li>
         </ul>
     </nav>
     </div>
 </header>
+<script>
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+</script>
+    <!-- <button type="button" onClick="onClick()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p> -->
 
 <div class = "layered">
     <ul >
@@ -41,6 +50,15 @@
                 <span></span>
                 <span></span>
                 <span class="fa fa-linkedin" aria-hidden="true"></span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/channel/UCLJcwbvKrNNWP1aUzTbrCUg?view_as=subscriber">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-youtube-play" aria-hidden="true"></span>
             </a>
         </li>
     </ul>
