@@ -8,10 +8,18 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.container div {
+    float: left;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-weight: 300;
+    font-size: x-large;
+    color: #444;
+}
 header {
     background: #e9c88a;
 }
-
 
 header ::after{
     content: '';
@@ -30,8 +38,8 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     position: relative;
 }
 nav a {
@@ -58,68 +66,7 @@ nav a:hover::before {
     width:100%;
 
 }
-section {
-    width: 100%;
-    height: 80vh;
-    background: url();
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-} 
-section .wave {
-    position: absolute;
-    width: 100%;
-    height: 143px;
-    bottom: 0;
-    left: 0;
-    background: url(../wave.png);
-    animation: animate 10s linear infinite;
-}
-section .wave::before{
-    content: '';
-    width: 100%;
-    height: 143px;
-    background: url(../wave.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.4;
-    animation: animate-reverse 15s linear infinite;
-}
-section .wave::after{
-    content: '';
-    width: 100%;
-    height: 143px;
-    background: url(../wave.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.6;
-    animation-delay: -5s;
-    animation: animate 20s linear infinite;
-}
-@keyframes animate 
-{
-    0%
-    {
-        background-position: 0; 
-    }
-    100%
-    {
-        background-position: 1360px;   
-    }
-}
-@keyframes animate-reverse
-{
-    0%
-    {
-        background-position: 1360px; 
-    }
-    100%
-    {
-        background-position: 0;   
-    }
-}
+
 
 .layered {
     margin: 0;
