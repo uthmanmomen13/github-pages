@@ -1,6 +1,6 @@
 body {
     margin:0;
-    background: rgb(64, 88, 102);
+    background: rgb(59, 73, 82);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
@@ -13,6 +13,7 @@ body {
     position: absolute;
     padding-top: 20px;
     padding-bottom: 15px;
+    
     font-weight: 300;
     font-size: x-large;
     color: #444;
@@ -66,13 +67,35 @@ nav a:hover::before {
     width:100%;
 
 }
+.about-nav {
+    float: left;
+    align-content: flex-end;
+}
+.about-body {
+    float: left;
+    
+}
+.about-body li {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.about-body li a{
+    font-size: 24px;
+    color: rgb(189, 99, 15);
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 
 .layered {
     margin: 0;
     padding-top: 0;
-    height: 50vh;
-    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 40%;
     align-items: center;
     justify-content: center;
 }
